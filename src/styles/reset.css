@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  :root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: #333;
+    background-color: transparent;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Imágenes y medios responsivos */
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Evitar estilos de botón por defecto */
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Enlaces sin estilos extra */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Mejora para listas */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Evitar diferencias en elementos de formulario */
+  input, textarea, select, button {
+    font: inherit;
+  }
+  
+  /* Mejoras para accesibilidad */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  /* Centrar el contenido base */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  

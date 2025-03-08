@@ -1,0 +1,81 @@
+.aboutSection {
+  padding: 2rem;
+  background-color: var(--primary-color);
+  text-align: left;
+}
+
+.aboutText {
+  font-size: 1.3rem;
+  color: var(--white);
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Alinear título y línea a la izquierda */
+.aboutHeadingContainer {
+  align-self: flex-start; /* Fija el título a la izquierda */
+}
+
+.aboutHeading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Contenedor de texto e imagen */
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Imagen responsiva */
+.imageContainer {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.contactButton {
+  transition: color 0.3s;
+}
+
+.contactButton:hover {
+  color: var( --success-color);
+  cursor: pointer;
+}
+
+/* Ajustes en pantallas más grandes */
+@media (min-width: 768px) {
+  .aboutContent {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .imageContainer {
+      max-width: 50%;
+  }
+}
+
+/* Sección de contacto */
+.contactText {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contactText h3 {
+  font-size: 2rem;
+}

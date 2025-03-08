@@ -1,0 +1,90 @@
+/* Estilos generales */
+.header {
+    background-color: var( --white);
+    padding: 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 400;
+    color: #000;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+
+  .logo img {
+    height: 80px;
+  }
+  
+
+  .menuButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .hamburgerIcon rect {
+    transition: all 0.3s ease;
+  }
+  
+
+  .navLinks {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var( --white);
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    align-items: center;
+  }
+  
+  .navLinks.open {
+    display: flex;
+  }
+  
+  .navLinks li {
+    padding: 15px 0;
+  }
+  
+  .navLinks a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navLinks a:hover {
+    color: #ffcc00;
+  }
+  
+
+  @media (min-width: 768px) {
+    .menuButton {
+      display: none;
+    }
+  
+    .navLinks {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      background: none;
+      width: auto;
+    }
+  
+    .navLinks li {
+      padding: 0;
+      margin-left: 20px;
+    }
+  }
