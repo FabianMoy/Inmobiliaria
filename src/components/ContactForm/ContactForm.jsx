@@ -56,8 +56,8 @@ export const ContactForm = () => {
             </a>
           </p>
           <p className={styles.emailContact}>
-            <a href="mailto:Danielvargasalejandro1@gmail.com" className={styles.highlight}>
-              Danielvargasalejandro1@gmail.com
+            <a href="mailto:vargasyasociaados@gmail.com" className={styles.highlight}>
+            vargasyasociaados@gmail.com
             </a>
           </p>
         </div>
