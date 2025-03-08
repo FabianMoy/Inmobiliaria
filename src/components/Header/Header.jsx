@@ -37,7 +37,7 @@ export const Header = () => {
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#practica">Áreas de Práctica</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          <li><a href=""><SocialMedia/></a></li>
+          <li><SocialMedia/></li>
         </ul>
       </nav>
     </header>

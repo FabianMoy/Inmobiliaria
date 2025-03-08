@@ -149,3 +149,117 @@
         color: #d4a800;
         cursor: pointer;
       }
+
+/* Estilos del checkbox */
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.checkboxContainer input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.checkboxError {
+  border-color: red !important;
+  box-shadow: 0 0 5px red;
+}
+
+.privacyLink {
+  color: #ecc422;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.privacyLink:hover {
+  color: #d4a800;
+}
+
+/* Mensaje de error */
+.errorText {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Estilos del modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-20px);
+  opacity: 0;
+  animation: fadeInSlide 0.5s forwards;
+}
+
+/* Modal Overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.modalOverlay.closing {
+  opacity: 0;
+}
+
+
+/* Animación de aparición */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación de cierre */
+.modalClosing {
+  animation: fadeOutSlide 0.5s forwards;
+}
+
+@keyframes fadeOutSlide {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
