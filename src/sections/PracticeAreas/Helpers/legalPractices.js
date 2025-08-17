@@ -1,66 +1,32 @@
 export const legalPractices = [
     {
-      title: "Derecho Civil",
-      image: "/civil.jpg", // Ajusta la imagen según corresponda
-      items: [
-        "Juicios de arrendamiento",
-        "Contratos de todo tipo",
-        "Acción reivindicatoria",
-        "Interpelaciones judiciales",
-        "Prescripción positiva y negativa",
-        "Apeo y deslinde",
-        "Desincorporación de propiedad",
-        "Juicios INFONAVIT"
-      ]
+      title: "Asesoria personalizada",
+      image: "/asesoria.jpg", 
+      description: "Te acompañamos paso a paso para entender tu situación y encontrar la mejor solución financiera o legal, adaptada a tus necesidades."
     },
     {
-      title: "Derecho Mercantil",
-      image: "/mercantil.jpg",
-      items: [
-        "Juicio ejecutivo mercantil",
-        "Oral mercantil",
-        "Cobro de facturas",
-        "Pagarés",
-        "Cheques",
-        "Actas constitutivas",
-        "Poderes"
-      ]
+      title: "Recuperación de tu hogar",
+      image: "/recuperacion.jpg",
+      description: "Si tu propiedad ha sido invadida o está en manos de terceros, te ayudamos a recuperarla de manera legal y segura."
     },
     {
-      title: "Derecho Laboral",
-      image: "/laboral.jpg",
-      items: [
-        "Despidos",
-        "Despidos de policías y funcionarios públicos"
-      ]
+      title: "Traspaso de tu deuda",
+      image: "/traspaso.jpg",
+      description: "Facilitamos el proceso para que transfieras tu crédito a otra persona, evitando complicaciones y liberándote de esa carga financiera."
     },
     {
-      title: "Derecho Fiscal",
-      image: "/fiscal.jpg",
-      items: [
-        "Juicios contra el SAT",
-        "Multas de tránsito",
-        "Amparos de todo tipo"
-      ]
+      title: "Asesoria legal",
+      image: "/legal.jpg",
+      description: "Contamos con especialistas que te orientan en temas jurídicos relacionados con tu vivienda, protegiendo siempre tus derechos."
     },
     {
-      title: "Derecho Familiar",
-      image: "/familiar.jpg",
-      items: [
-        "Divorcios",
-        "Pensión alimenticia",
-        "Convivencias",
-        "Sucesión intestamentaria",
-        "Sucesión testamentaria especial"
-      ]
+      title: "Compramos tu casa",
+      image: "/casa.jpg",
+      description: "Si necesitas vender rápido, te ofrecemos una compra segura y confiable, con un proceso claro y sin trámites innecesarios."
     },
     {
-      title: "Derecho Penal",
-      image: "/penal.jpg",
-      items: [
-        "Robo a mano armada",
-        "Ejecución de pensión",
-        "Delitos de menor impacto"
-      ]
+      title: "Regularización de escrituras",
+      image: "/escrituras.jpg",
+      description: "Te apoyamos en la actualización y regularización de tus escrituras, para que tu propiedad esté en regla y puedas vender, heredar o rentar sin problemas."
     }
   ];

@@ -1,7 +1,6 @@
 /* Estilos generales */
 .header {
     background-color: var( --white);
-    padding: 10px 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
@@ -47,7 +46,7 @@
     text-align: center;
     display: none;
     padding: 10px 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     align-items: center;
   }
   
@@ -66,7 +65,7 @@
   }
   
   .navLinks a:hover {
-    color: #ffcc00;
+    color: #f50100;
   }
   
 

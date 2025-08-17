@@ -1,28 +1,30 @@
-.cardsContainer{
-    display: flex;
-    justify-content: center;
-    height: max-content;
-}
-
 .PracticeAreasSection {
-    display: grid;
-    gap: 20px;
+    position: relative;
     padding: 20px;
-    justify-content: center;
-    grid-template-columns: 1fr; /* Mobile-first: 1 tarjeta por fila */
     background-color: var(--secondary-color);
 }
 
-/* Tablet (2 tarjetas por fila) */
-@media (min-width: 600px) {
-    .PracticeAreasSection {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-/* Pantallas grandes (máximo 3 tarjetas por fila) */
-@media (min-width: 1024px) {
-    .PracticeAreasSection {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.servicesTitle {
+    text-align: center;
+    margin-bottom: -20px;
+    font-size: 2rem;
+}
+
+.PracticeAreasSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e53935;
+    clip-path: polygon(100% 0, 100% 100%, 60% 100%);
+  z-index: 0;
 }

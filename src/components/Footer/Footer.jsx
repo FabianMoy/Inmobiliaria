@@ -9,7 +9,7 @@ export const Footer = () => {
       <div className={styles.left}>
         <img src="./logo2.png" alt="Logo de la empresa" className={styles.logo} />
         <div className={styles.text}>
-          <p>Lic Daniel Vargas Vargas</p>
+          <p>Vargas Inmobiliaria Real State</p>
           <p>Copyright © 2025 Todos los derechos reservados</p>
         </div>
       </div>

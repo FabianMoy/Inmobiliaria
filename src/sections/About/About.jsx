@@ -1,51 +1,46 @@
-import styles from "./About.module.css";
-
+import { motion, useInView } from 'framer-motion';
+import { useRef, useEffect } from 'react';
+import styles from './About.module.css'; // Ajusta la ruta de tu CSS
 
 export const About = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false }); 
+  
+  useEffect(() => {
+  console.log('Está en vista:', isInView);
+}, [isInView]);
+
   return (
-    <section id="nosotros" className={styles.aboutSection}>
-      <div className={styles.aboutText}>
-        
-        {/* Contenedor del título alineado a la izquierda */}
-        <div className={styles.aboutHeadingContainer}>
-          <h2 className={styles.aboutHeading}>Acerca de</h2>
-          <svg viewBox="0 0 100 24" width="200" height="30" fill="yellow">
-            <rect y="4" width="300" height="2"></rect>
+    <section id="practica" className={styles.aboutSection} ref={ref}>
+      <div className={styles.aboutContent}>
+        <motion.div
+          className={styles.imageContainer}
+          initial={{ opacity: 0, x: -50 }}
+          animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+        >
+          <img
+            src="/about1.jpg"
+            alt="Piscina"
+            className={styles.mainImage}
+          />
+        </motion.div>
+
+        <motion.div
+          className={styles.textContainer}
+          initial={{ opacity: 0, x: 50 }}
+          animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
+        >
+          <h2 className={styles.aboutHeading}>Sobre nosotros</h2>
+          <svg viewBox="0 10 300 24" width="200" height="30" fill="#f50100">
+            <rect y="0" width="300" height="2"></rect>
           </svg>
-        </div>
-
-        {/* Contenedor de texto + imagen */}
-        <div className={styles.aboutContent}>
-          <div className={styles.textContainer}>
-            <p>
-              El Licenciado <strong>Daniel Alejandro Vargas Vargas</strong> es egresado de la <strong>Universidad Metropolitana de Monterrey</strong> y cuenta con amplia experiencia en diversas ramas del derecho, brindando asesoría y representación legal con un enfoque integral y basado en el cumplimiento de la ley.
-            </p>
-            <p>
-              Su ejercicio profesional abarca asuntos de índole <strong>civil, mercantil, laboral, fiscal, familiar y penal</strong>, ofreciendo soluciones estratégicas que permiten atender cada caso de manera eficiente y con apego a los principios jurídicos.
-            </p>
-            <p>
-              Comprometido con la transparencia y la ética profesional, su labor se centra en proporcionar a cada cliente un servicio confiable, orientado a la obtención de resultados dentro de los tiempos y procedimientos establecidos.
-            </p>
-          </div>
-
-          {/* Imagen */}
-          <div className={styles.imageContainer}>
-            <img src='/about.jpg' alt="about image" />
-          </div>
-        </div>
-
-        {/* Sección de contacto */}
-        <div className={styles.contactText}>
-          <h3>¿Necesitas asesoría legal inmediata o buscas prevenir futuros problemas?</h3>
-          <p>Llámanos o escríbenos para agendar una cita.</p>
-          <div>
-            <span>Teléfono de oficina y <b></b>
-              <span className={styles.contactButton}>
-                WhatsApp: +52 (81) 2426 9166
-              </span>
-            </span>
-          </div>
-        </div>
+          <p><strong>Si estás atravesando una situación difícil con tu propiedad, podemos ayudarte.</strong></p>
+          <p> Nuestro objetivo es ofrecerte una salida sencilla, legal y sin complicaciones. Compramos casas con deudas, en traspaso o con problemas, y te explicamos todo de forma clara y sin rodeos. </p>
+          <p> <strong>Contamos con un equipo de profesionales expertos en temas legales, financieros y notariales, lo que nos permite actuar con transparencia en cada paso del proceso.</strong> </p>
+          <p> Te brindamos opciones reales y un trato justo, porque entendemos lo importante que es tu tranquilidad y tu patrimonio. </p>
+        </motion.div>
       </div>
     </section>
   );

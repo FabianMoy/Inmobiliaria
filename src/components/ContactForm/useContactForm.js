@@ -39,6 +39,6 @@ export const useContactForm = () => {
     }
   };
 
-  return { formData, handleChange, handleSubmit, status };
+  return { formData, handleChange, handleSubmit, status};
 };
 

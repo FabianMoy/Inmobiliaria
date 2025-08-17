@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #1b262c;       /* Azul oscuro profesional */
-    --secondary-color: #2e3b44  ;     /* Marrón tierra para acentos */
+    --primary-color: #f2f5f6;       /* Azul oscuro profesional */
+    --secondary-color: #f2f5f6  ;     /* Marrón tierra para acentos */
     --text-color: #333333;
     --background-light: #f0f0e9;
-    --white: #FFFFFF;
+    --white: #fcfcfc;
     --success-color: #4CAF50;
     --error-color: #f44336;
   }

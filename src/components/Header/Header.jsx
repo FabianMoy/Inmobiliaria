@@ -34,10 +34,9 @@ export const Header = () => {
 
         <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ""}`}>
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#practica">Áreas de Práctica</a></li>
+          <li><a href="#practica">Nosotros</a></li>
+          <li><a href="#nosotros">Beneficios</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          <li><SocialMedia/></li>
         </ul>
       </nav>
     </header>
