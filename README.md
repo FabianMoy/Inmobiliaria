@@ -13,3 +13,5 @@ If you are developing a production application, we recommend using TypeScript an
 "# Inmobiliaria" 
 "# Inmobiliaria" 
 "# Inmobiliaria" 
+"# Inmobiliaria"  git init git add README.md git commit -m "first commit" git branch -M main git remote add origin https://github.com/FabianMoy/Inmobiliaria.git git push -u origin main
+"# Inmobiliaria" 
