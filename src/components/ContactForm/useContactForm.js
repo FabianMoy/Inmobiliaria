@@ -3,10 +3,9 @@ import emailjs from "@emailjs/browser";
 
 export const useContactForm = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    message: "",
+    name: "Prueba",
+    email: "prueba@prueba.com",
+    message: "prueba",
   });
 
   const [status, setStatus] = useState(""); // Estado para mostrar la animación
@@ -22,15 +21,15 @@ export const useContactForm = () => {
 
     try {
       await emailjs.send( 
-        "contactUsers",
-        "ContactForm", 
+        "service_46wb12n",
+        "template_l0yyfma", 
         {
           ...formData
         },
-        "NCAgfR3qRFTsAj6PS" );
+        "zRGhPkyljgFDU-Rxj" );
       
       setStatus("success");
-      setFormData({ name: "", phone: "", email: "", message: "" });
+      setFormData({ name: "", email: "", message: "" });
 
       setTimeout(() => setStatus(""), 3000); // Oculta la animación después de 3s
     } catch (error) {

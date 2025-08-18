@@ -10,7 +10,7 @@ export const PracticeAreas = () => {
 
   return (
     <section 
-      id='nosotros' 
+      id='servicios' 
       className={styles.PracticeAreasSection}
       ref={ref}
     >

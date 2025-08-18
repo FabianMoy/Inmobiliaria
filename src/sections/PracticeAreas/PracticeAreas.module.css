@@ -28,3 +28,10 @@
     clip-path: polygon(100% 0, 100% 100%, 60% 100%);
   z-index: 0;
 }
+
+  @media (max-width: 768px) {
+    .servicesTitle {
+      padding-bottom: 30px;
+    }
+    
+  }

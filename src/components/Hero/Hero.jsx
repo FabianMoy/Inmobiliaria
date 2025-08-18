@@ -31,7 +31,7 @@ export const Hero = () => {
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
           <a
-            href="https://wa.link/32n8w4"
+            href="https://api.whatsapp.com/send?phone=5218135934364"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.textLink}

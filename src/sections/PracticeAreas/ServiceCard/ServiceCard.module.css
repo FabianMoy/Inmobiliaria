@@ -46,3 +46,10 @@
   line-height: 1.4;
   text-align: justify;
 }
+
+  @media (max-width: 768px) {
+    .serviceCard {
+      padding: 10px 5px;
+    }
+    
+  }

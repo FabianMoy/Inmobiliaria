@@ -30,6 +30,10 @@
     display: block;
   }
   
+  .hamburgerIcon{
+    margin-right: 2rem;
+  }
+
   .hamburgerIcon rect {
     transition: all 0.3s ease;
   }

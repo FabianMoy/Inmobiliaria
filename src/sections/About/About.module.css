@@ -49,7 +49,7 @@
 }
 
 .textContainer {
-  max-width: 35vw;
+  width: 35vw;
   text-align: justify;
 }
 
@@ -65,12 +65,12 @@
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 768px) {
-  .aboutContent {
-
+@media (max-width: 780px) {
+  .textContainer {
+    width: 100%;
   }
 
   .imageContainer {
-
+    display: none;
   }
 }
