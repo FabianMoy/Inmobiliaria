@@ -11,6 +11,10 @@
     scroll-padding-top: 80px;
   }
 
+  main{
+    width: 100vw;
+  }
+
   :root {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
@@ -31,6 +35,7 @@
     color: #333;
     background-color: transparent;
     text-rendering: optimizeLegibility;
+      background-color: #f4f7fb;
   }
   
   /* Imágenes y medios responsivos */

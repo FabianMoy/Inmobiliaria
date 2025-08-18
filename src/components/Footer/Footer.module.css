@@ -1,69 +1,69 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: 333;
-    color: white;
-    flex-wrap: wrap;
-    text-align: center;
-    font-size: 0.8rem;
-  }
-  
-  /* Sección izquierda (Logo + Texto) */
-  .left {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .logo {
-    width: auto;
-    height: 40px; /* Ajusta según el tamaño de tu logo */
-  }
-  
-  .text {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: auto;
+  height: 40px;
+  /* Ajusta según el tamaño de tu logo */
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Sección derecha (Redes Sociales) */
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialTitle {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
     flex-direction: column;
-    align-items: flex-start;
+    text-align: center;
   }
 
-  /* Sección derecha (Redes Sociales) */
-  .right {
-    display: flex;
+  .left {
     flex-direction: column;
     align-items: center;
   }
-  
-  .socialTitle {
-    font-weight: bold;
-    margin-bottom: 5px;
+
+  .text {
+    align-items: center;
   }
-  
-  .icons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .icon {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .footer {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .left {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .text {
-      align-items: center;
-    }
-  }
+}

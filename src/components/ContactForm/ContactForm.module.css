@@ -1,98 +1,100 @@
 .contactSection {
-    color: #333;
-    padding: 4rem 8rem;
-    text-align: center;
-    background-color: var(--secondary-color);
-  }
-  
-  .heading {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .info {
-    margin-bottom: 20px;
-    font-size: 1.3rem;
-  }
-  
-  .highlight {
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .form {
-    border-radius: 8px;
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    background-color: #e53935;
-  }
+  color: #333;
+  padding: 1rem 1rem;
+  text-align: left;
+  background-color: var(--secondary-color);
+}
 
-  .contactLinks {
-    background-color: #25d366;
-    width: max-content;
-    padding: 0.7rem;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
-    color: #ffffff;
-    margin-right: auto;
-  }
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
 
-  .whatsappIcon {
-    font-size: 1.3rem;
-    fill: var(--white);
-    overflow: visible;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+}
 
-.form input{
-    background-color: var(--background-light);
-  }
-  
-  .inputGroup {
-    display: flex;
-    gap: 10px; 
-  }
-  
-  .inputGroup input {
-    flex: 1;
-    background-color: var(--background-light);
-    color: #000;
+.info {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
 
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 3px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    color: #000;
-    transition: all 0.3s ease;
-  }
+.highlight {
+  color: #333;
+  font-weight: bold;
+}
 
-  input:focus, textarea:focus{
-    border-color: #53a8e0;
-    outline: none; 
-  }
-  
-  textarea {
-    resize: none;
-    height: 100px;
-    background-color: var(--background-light);
+.form {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: #e53935;
+}
 
-  }
-  
+.contactLinks {
+  background-color: #25d366;
+  width: max-content;
+  padding: 0.7rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  margin-right: auto;
+}
+
+.whatsappIcon {
+  font-size: 1.3rem;
+  fill: var(--white);
+  overflow: visible;
+}
+
+.form input {
+  background-color: var(--background-light);
+}
+
+.inputGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.inputGroup input {
+  flex: 1;
+  background-color: var(--background-light);
+  color: #000;
+
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #53a8e0;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+  background-color: var(--background-light);
+
+}
+
 .button {
   background-color: var(--secondary-color);
   color: #1d1e20;
@@ -104,47 +106,52 @@
 }
 
 .button:hover {
-  background-color: #424242; /* Gris oscuro */
+  background-color: #424242;
+  /* Gris oscuro */
   color: white;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.error {
+  color: #53a8e0;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
   }
-  
-  .success {
-    color: green;
-    margin-top: 10px;
+
+  .contactSection {
+    padding: 4rem 4rem;
+  }
+
+  .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    font-size: 1.3rem;
+    max-width: 80%;
     font-weight: bold;
   }
-  
-  .error {
-    color: #53a8e0;
-    margin-top: 10px;
-    font-weight: bold;
+
+  .form {
+    flex: 1;
+    max-width: 600px;
   }
-  
-  
-  @media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-        justify-content: center; 
-        align-items: center;
-        gap: 50px; 
-      }
-    
-      .info {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        text-align: justify;
-        font-size: 1.3rem;
-        max-width: 80%;
-        font-weight: bold;
-      }
-    
-      .form {
-        flex: 1;
-        max-width: 600px;
-      }
-    }
+}
 
 /* Estilos del checkbox */
 .checkboxContainer {
@@ -238,6 +245,7 @@
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -254,6 +262,7 @@
     opacity: 1;
     transform: translateY(0);
   }
+
   to {
     opacity: 0;
     transform: translateY(-20px);

@@ -3,9 +3,9 @@ import emailjs from "@emailjs/browser";
 
 export const useContactForm = () => {
   const [formData, setFormData] = useState({
-    name: "Prueba",
-    email: "prueba@prueba.com",
-    message: "prueba",
+    name: "",
+    email: "",
+    message: "",
   });
 
   const [status, setStatus] = useState(""); // Estado para mostrar la animación
