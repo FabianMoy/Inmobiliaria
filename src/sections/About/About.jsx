@@ -11,7 +11,7 @@ export const About = () => {
 }, [isInView]);
 
   return (
-    <section id="practica" className={styles.aboutSection} ref={ref}>
+    <section id="nosotros" className={styles.aboutSection} ref={ref}>
       <div className={styles.aboutContent}>
         <motion.div
           className={styles.imageContainer}
